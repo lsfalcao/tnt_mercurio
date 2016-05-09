@@ -26,7 +26,5 @@ Gem::Specification.new do |gem|
   gem.platform              = Gem::Platform::RUBY
   gem.required_ruby_version = Gem::Requirement.new(">= 1.9")
 
-  gem.add_runtime_dependency "savon",       "~> 2.10"
-
-  gem.add_development_dependency "rake",    "~> 10.4"
+  gem.add_runtime_dependency "savon",       ">= 2.11.1"
 end

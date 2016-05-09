@@ -92,6 +92,12 @@ Adicionar as cofigurações abaixo ao arquivo config/initializers/tnt_mercurio.r
   TntMercurio::Service.configure do |config|
 
     #
+    # Opções para Divisão cliente
+    # Long numérico com o código da divisão do cliente.
+    # Ligar para o Comercial para pedir esta informação.
+    config.divisao_cliente = 1
+
+    #
     # Opções para Situação Tributaria do Remetente e Destinatário
     # String de duas posições.
     # 'CO' (Contribuinte)

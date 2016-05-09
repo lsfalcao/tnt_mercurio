@@ -12,8 +12,7 @@ module TntMercurio
       TIPO_PESSOA_DESTINATARIO          = 'F'   # Física
       TIPO_SERVICO                      = 'RNC' # RNC Rodoviário Nacional
       TIPO_FRETE                        = 'C'   # C - CIF
-      attr_reader :divisao_cliente
-      attr_writer :situacao_tributaria_destinatario, :situacao_tributaria_remetente,
+      attr_writer :divisao_cliente, :situacao_tributaria_destinatario, :situacao_tributaria_remetente,
                   :tipo_pessoa_remetente, :tipo_pessoa_destinatario, :tipo_servico, :tipo_frete
 
       #
@@ -22,8 +21,12 @@ module TntMercurio
         yield self if block_given?
       end
 
+      #
+      # Opções para Divisão cliente
+      # Long numérico com o código da divisão do cliente.
+      # Ligar para o Comercial para pedir esta informação.
       def divisao_cliente
-        @divisao_cliente = DIVISAO_CLIENTE
+        @divisao_cliente ||= DIVISAO_CLIENTE
       end
 
       #
