@@ -5,11 +5,11 @@ require 'tnt_mercurio/version'
 Gem::Specification.new do |gem|
   gem.name                  = "tnt_mercurio"
   gem.version               = TntMercurio::VERSION
-  gem.authors               = ["QW3 Software & Marketing"]
-  gem.email                 = ["contato@qw3.com.br"]
+  gem.authors               = ["Leandro Falcão"]
+  gem.email                 = ["le.sfalcao@gmail.com"]
   gem.summary               = "Calcula Frete pelo TNT Mercúrio"
   gem.description           = "Gem para utilização do Webservices disponibilizado pela empresa TNT Mercúrio."
-  gem.homepage              = "https://github.com/qw3/tnt_mercurio"
+  gem.homepage              = "https://github.com/lsfalcao/tnt_mercurio"
   gem.license               = "MIT"
 
   gem.files                 = [

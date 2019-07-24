@@ -139,18 +139,29 @@ Adicionar as cofigurações abaixo ao arquivo config/initializers/tnt_mercurio.r
   end
 ```
 
+## Contributing
+
+- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+- Fork the project.
+- Start a feature/bugfix branch.
+- Commit and push until you are happy with your contribution.
+- Don't forget to rebase with branch master in main project before submit the pull request.
+- Please don't change the gemspec file, Rakefile, version, or history.
+
 ## Autor
-- [QW3 Software & Marketing](http://qw3.com.br)
+- [Leandro Falcão](https://github.com/lsfalcao)
 
 ## Copyright
 
-[QW3 Software & Marketing](http://qw3.com.br)
+[Leandro Falcão](https://github.com/lsfalcao)
+[QW3 Software & Marketing](https://qw3.com.br)
 
 ![QW3 Logo](http://qw3.com.br/qw3_logo.png)
 
 The MIT License (MIT)
 
-Copyright (c) 2015 QW3
+Copyright (c) 2019 QW3
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
