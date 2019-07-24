@@ -11,6 +11,8 @@ module TntMercurio
         @savon_client = Savon.client(
           wsdl: ::TntMercurio::Service::Configuracao::URL,
           convert_request_keys_to: :lower_camelcase,
+          namespaces: { "xmlns:tns" => "http://model.vendas.lms.mercurio.com",
+                        "xmlns:mod" => "http://model.vendas.lms.mercurio.com" },
         )
       end
 
