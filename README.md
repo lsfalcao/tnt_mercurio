@@ -154,8 +154,8 @@ Adicionar as cofigurações abaixo ao arquivo config/initializers/tnt_mercurio.r
 
 ## Copyright
 
-[Leandro Falcão](https://github.com/lsfalcao)
-[QW3 Software & Marketing](https://qw3.com.br)
+- [Leandro Falcão](https://github.com/lsfalcao)
+- [QW3 Software & Marketing](https://qw3.com.br)
 
 ![QW3 Logo](http://qw3.com.br/qw3_logo.png)
 
