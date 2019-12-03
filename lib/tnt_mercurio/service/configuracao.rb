@@ -80,13 +80,13 @@ module TntMercurio
       # Montar o Hash de configurações
       def configuracoes_calculo_frete
         configuracoes = {
-          cdDivisaoCliente: divisao_cliente,
-          tpSituacaoTributariaDestinatario: situacao_tributaria_destinatario,
-          tpSituacaoTributariaRemetente: situacao_tributaria_remetente,
-          tpPessoaRemetente: tipo_pessoa_remetente,
-          tpPessoaDestinatario: tipo_pessoa_destinatario,
-          tpServico: tipo_servico,
-          tpFrete: tipo_frete,
+          "mod:cdDivisaoCliente" => divisao_cliente,
+          "mod:tpSituacaoTributariaDestinatario" => situacao_tributaria_destinatario,
+          "mod:tpSituacaoTributariaRemetente" => situacao_tributaria_remetente,
+          "mod:tpPessoaRemetente" => tipo_pessoa_remetente,
+          "mod:tpPessoaDestinatario" => tipo_pessoa_destinatario,
+          "mod:tpServico" => tipo_servico,
+          "mod:tpFrete" => tipo_frete,
         }
         return configuracoes
       end

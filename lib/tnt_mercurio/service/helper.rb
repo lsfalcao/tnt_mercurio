@@ -20,22 +20,22 @@ module TntMercurio
         raise erros_params unless erros_params.blank?
 
         params = {
-          in0: {
-            login: parametros[:login],
-            cepOrigem: parametros[:cep_origem],
-            nrIdentifClienteRem: parametros[:cnpj_remetente],
-            nrInscricaoEstadualRemetente: parametros[:ie_remetente],
+          "ser:in0" => {
+            "mod:login" => parametros[:login],
+            "mod:cepOrigem" => parametros[:cep_origem],
+            "mod:nrIdentifClienteRem" => parametros[:cnpj_remetente],
+            "mod:nrInscricaoEstadualRemetente" => parametros[:ie_remetente],
 
-            cepDestino: parametros[:cep_destino],
-            nrIdentifClienteDest: parametros[:cpf_destinatario],
+            "mod:cepDestino" => parametros[:cep_destino],
+            "mod:nrIdentifClienteDest" => parametros[:cpf_destinatario],
 
-            vlMercadoria: parametros[:valor_total],
-            psReal: parametros[:peso],
+            "mod:vlMercadoria" => parametros[:valor_total],
+            "mod:psReal" => parametros[:peso],
           }
         }
 
         # Adiciona as configurações padrões
-        params[:in0].merge! TntMercurio::Service.configuracoes_calculo_frete
+        params["ser:in0"].merge! TntMercurio::Service.configuracoes_calculo_frete
 
         return params
       end
@@ -44,7 +44,7 @@ module TntMercurio
       # Montar o Hash com a resposta de calculo de frete
       def build_response_calculo_frete(resposta = {})
         response = {}
-        if resposta.blank? or resposta[:calcula_frete_response].blank? or !resposta[:error].blank? or !resposta[:calcula_frete_response][:out][:error_list][:string].blank?
+        if resposta.blank? or resposta[:calcula_frete_response].blank? or !resposta[:error].blank? or !resposta[:calcula_frete_response][:out][:error_list].blank?
           response[:sucesso?]       = false
           if resposta[:error].blank?
             response[:error]        = resposta[:calcula_frete_response][:out][:error_list][:string]
